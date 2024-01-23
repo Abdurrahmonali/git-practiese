@@ -121,3 +121,46 @@ p {
   height: 40px;
   background-color: aqua;
 }
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 70px;
+  width: 1200px;
+  height: 1000px;
+/* background-color: aqua;
+background-image: url("https://picsum.photos/300?random=1"),
+url("https://picsum.photos/600?random=2");
+background-repeat: no-repeat, repeat;
+background-position: center center, left top; */
+
+background-image: url("https://picsum.photos/200"),
+linear-gradient(
+  /* -45deg, */
+/* to right top,
+red 300px,
+blue 30%,yellow 600px,
+yellow 800px,
+black); */
+
+/* to bottom,
+blue 30%,
+red 30%,
+red 35%,
+white 35%,
+white 65%,
+red 65%,
+red 70%,
+green 70%); */
+
+
+to left,
+red, blue);
+background-repeat: no-repeat;
+background-position: 30px 30px, center center;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
