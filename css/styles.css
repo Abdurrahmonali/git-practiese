@@ -1,10 +1,18 @@
 
-
+:root {
+  --text-color: #222;
+  --background-color: rgb(182, 78, 78);
+}
+.dark-mode {
+  color: white;
+  background-color: black;
 body {
 display: flex;
 flex-direction: column;
 background-color: blueviolet;
 font-family: "Rubik" sans-serif;
+}
+
 }
 @font-face {
   font-family: "Rubik";
@@ -137,8 +145,9 @@ url("https://picsum.photos/600?random=2");
 background-repeat: no-repeat, repeat;
 background-position: center center, left top; */
 
-background-image: url("https://picsum.photos/200"),
-linear-gradient(
+background-image: url("../img/duvar.webp");
+background-position: center center;
+/* linear-gradient(
   /* -45deg, */
 /* to right top,
 red 300px,
@@ -157,10 +166,46 @@ red 70%,
 green 70%); */
 
 
-to left,
+/* to left,
 red, blue);
 background-repeat: no-repeat;
 background-position: 30px 30px, center center;
 -webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+-webkit-text-fill-color: transparent; */
+border: 15px solid brown;
+}
+.div-wrap {
+  display: flex;
+  background-image: url("../img/small-house-design-ideas.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 700px;
+  border: 20px solid brown;
+  transition: transform 1s ease;
+  transform: perspectiveX(2000px);
+}
+
+.one-div {
+  width: 300px;
+  height: 7000px;
+  background-color: aqua;
+/* transform: translateY(-100px); */
+/* transform: scaleX(1.5); */
+/* transform: scaleX(3) scaleY(0.5); */
+/* transform: rotate(-45deg); */
+transform: rotateY(80deg);
+/* transform: skewY(-45deg); */
+/* transform: rotate(40deg) translate(300px); */
+/* transform-origin: right bottom; */
+/* transform-origin: left center; */
+}
+.two-div {
+  width: 300px;
+  height: 350px;
+/* transform: translate(50px 50px); */
+/* transform: rotateY(-80deg);
+transform-origin: right center; */
 }
