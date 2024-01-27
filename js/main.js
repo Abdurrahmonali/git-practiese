@@ -27,3 +27,16 @@ document.body.classlist.add('dark-mode');
 elLightModeButton.addEventListener('click', function(){
 document.body.classList.remove('dark-mode');
 });
+
+
+const elInput = document.querySelector('.input');
+const elSelect = document.querySelector('.select');
+
+elSelect.addEventListener('change', function() {
+  if (elSelect.value === 'boshqa') {
+elInput.disabled = false;
+}
+else {
+  elInput.value = '';
+  elInput.disabled = true;}
+});

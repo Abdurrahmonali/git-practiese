@@ -10,10 +10,10 @@ body {
 display: flex;
 flex-direction: column;
 background-color: rgb(132, 0, 255);
-font-family: "Rubik" sans-serif;
+font-family: "Rubik", sans-serif;
 }
 
-}
+
 @font-face {
   font-family: "Rubik";
   src: url("../fonts/Rubik-Black.woff2") format("woff2"),
@@ -118,7 +118,7 @@ textarea {
 }
 p {
   background-color: rgb(189, 195, 29);
-  font-family: "Rubik" sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 600;
   font-style: italic;
 
