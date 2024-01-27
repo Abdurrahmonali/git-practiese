@@ -3,13 +3,13 @@
   --text-color: #222;
   --background-color: rgb(182, 78, 78);
 }
-.dark-mode {
+/* .dark-mode {
   color: white;
-  background-color: black;
+  background-color: black;} */
 body {
 display: flex;
 flex-direction: column;
-background-color: blueviolet;
+background-color: rgb(132, 0, 255);
 font-family: "Rubik" sans-serif;
 }
 
@@ -208,4 +208,29 @@ transform: rotateY(80deg);
 /* transform: translate(50px 50px); */
 /* transform: rotateY(-80deg);
 transform-origin: right center; */
+}
+
+/* INPUTNING VALID TANLOVCHISI */
+.input {
+  border: 2px solid #333;
+  outline: 2px dashed blue;
+  outline-offset: 2px ;
+  width: 250px;
+  height: 30px;
+  padding-left: 10px;
+}
+.input:not(:placeholder-shown){
+  border-color: red;
+color: red;
+}
+/* .input:invalid {
+  color: red;
+  border-color: red;
+} */
+.input:valid {
+  color: rgba(27, 159, 27, 0.645);
+  border-color: rgba(27, 159, 27, 0.645);
+}
+.input:disabled {
+  background-color: #ddd;
 }
